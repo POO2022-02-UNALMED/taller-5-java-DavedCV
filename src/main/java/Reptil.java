@@ -11,7 +11,7 @@ public class Reptil extends Animal{
     private String colorEscamas;
     private int largoCola;
 
-    public reptil(){}
+    public Reptil(){}
 
     public Reptil(String nombre, int edad, String habitat, String genero, Zona zonas, String colorEscamas, int largoCola) {
         super(nombre, edad, habitat, genero, zonas);
