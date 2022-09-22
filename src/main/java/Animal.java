@@ -12,20 +12,19 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(String nombre, int edad, String habitat, String genero, Zona zonas) {
+    public Animal(String nombre, int edad, String habitat, String genero) {
         this.totalAnimales++;
         this.nombre = nombre;
         this.edad = edad;
         this.habitat = habitat;
         this.genero = genero;
-        this.zona = zonas;
     }
 
     public String movimiento() {
         return "desplazarse";
     }
 
-    public String totalPorTipo() {
+    public static String totalPorTipo() {
         return String.format("Mamiferos:%d\nAves:%d\nReptiles:%d\nPeces:%d\nAnfibios:%d", Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios());
     }
 
