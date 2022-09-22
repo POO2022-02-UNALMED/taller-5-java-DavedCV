@@ -36,4 +36,19 @@ public class Ave extends Animal{
         return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
     }
 
+    public static ArrayList<Ave> getListado() {
+        return listado;
+    }
+
+    public static void setListado(ArrayList<Ave> listado) {
+        Ave.listado = listado;
+    }
+
+    public String getColorPlumas() {
+        return colorPlumas;
+    }
+
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
 }
